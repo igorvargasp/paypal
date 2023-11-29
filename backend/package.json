@@ -1,9 +1,9 @@
 {
   "main": "index.js",
   "scripts": {
-    "build": "ncc build index.js -o dist",
-    "dev": "ncc run ./dist/index.js",
-    "start": "ncc run ./dist/index.js"
+    "build": "ncc build index.js -o public",
+    "dev": "ncc run ./public/index.js",
+    "start": "ncc run ./public/index.js"
   },
   "dependencies": {
     "@paypal/checkout-server-sdk": "^1.0.3",
