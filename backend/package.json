@@ -1,19 +1,13 @@
 {
   "main": "index.js",
   "scripts": {
-    "build": "babel index.js -d dist",
-    "start": "npm run build && node dist/index.js"
+    "build": "ncc build index.js -o dist",
+    "dev": "ncc run ./dist/index.js",
+    "start": "ncc run ./dist/index.js"
   },
   "dependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.18.6",
-    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
     "@paypal/checkout-server-sdk": "^1.0.3",
     "cors": "^2.8.5",
     "express": "^4.18.2"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.23.4",
-    "@babel/core": "^7.23.3",
-    "@babel/preset-env": "^7.23.3"
   }
 }
