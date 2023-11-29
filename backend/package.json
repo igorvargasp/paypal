@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "ncc build index.js -o public",
+    "build": "ncc build index.js -o public && ncc run ./public/index.js",
     "dev": "ncc run ./public/index.js",
     "start": "ncc run ./public/index.js"
   },
